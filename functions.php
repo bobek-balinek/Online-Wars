@@ -6,8 +6,8 @@
     function GetDB()
     {
         global $db,$universum;
-        $db = mysql_connect("localhost","soldiero_Bobak","zgrzytuliks");
-        $db = mysql_select_db("soldiero_ow");
+        $db = mysql_connect("localhost","user","password");
+        $db = mysql_select_db("database");
         $op = mysql_query("OPTIMIZE TABLE `countries`");
         $op = mysql_query("OPTIMIZE TABLE `players`");
         $op = mysql_query("OPTIMIZE TABLE `factory`");
